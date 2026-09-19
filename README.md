@@ -1,3 +1,4 @@
+HEAD
 # Prédiction du prix de vente des maisons (House Prices)
 
 Projet de Machine Learning (régression) visant à prédire le prix de vente d'une maison à partir de ses caractéristiques (surface, qualité, quartier, équipements...).
@@ -82,3 +83,7 @@ Le modèle retenu est une **régression Ridge avec alpha optimisé**, atteignant
 ├── notebook.ipynb
 └── README.md
 ```
+
+# prediction_prix_de_maison
+Prédiction du prix de vente de maisons (régression) — nettoyage avancé de données, encodage ordinal/One-Hot, Ridge/Lasso, optimisation d'hyperparamètres avec GridSearchCV
+
