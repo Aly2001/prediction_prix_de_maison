@@ -1,0 +1,8 @@
+# Points de sauvegarde automatiques de Jupyter
+.ipynb_checkpoints/
+
+# Données Kaggle : à télécharger sur la page de la compétition (non redistribuées)
+train.csv
+test.csv
+
+__pycache__/

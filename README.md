@@ -1,4 +1,3 @@
-HEAD
 # Prédiction du prix de vente des maisons (House Prices)
 
 Projet de Machine Learning (régression) visant à prédire le prix de vente d'une maison à partir de ses caractéristiques (surface, qualité, quartier, équipements...).
@@ -60,6 +59,10 @@ La régression linéaire simple s'est révélée instable face au grand nombre d
 
 Le modèle retenu est une **régression Ridge avec alpha optimisé**, atteignant un **R² de 0.89** sur le jeu de test — le modèle explique environ 89% de la variance des prix de vente.
 
+![Prix réel contre prix prédit par le Ridge optimisé](images/prix-reel-vs-predit.png)
+
+Chaque point est une maison du jeu de test : plus les points sont proches de la diagonale rouge, plus la prédiction est juste.
+
 ## Pistes d'amélioration
 
 - Tester des modèles non linéaires (Random Forest Regressor, XGBoost)
@@ -77,13 +80,21 @@ Le modèle retenu est une **régression Ridge avec alpha optimisé**, atteignant
 ## Structure du projet
 
 ```
-├── data/
-│   ├── train.csv
-│   └── data_description.txt
-├── notebook.ipynb
+├── prediction_prix_de_maison.ipynb   le notebook complet
+├── images/                           graphiques du README
 └── README.md
 ```
 
-# prediction_prix_de_maison
-Prédiction du prix de vente de maisons (régression) — nettoyage avancé de données, encodage ordinal/One-Hot, Ridge/Lasso, optimisation d'hyperparamètres avec GridSearchCV
+## Lancer le projet
 
+Les données appartiennent à la compétition Kaggle et ne sont pas redistribuées ici.
+Téléchargez `train.csv` sur la page de la compétition
+(https://www.kaggle.com/c/house-prices-advanced-regression-techniques/data),
+placez-le à côté du notebook, puis ouvrez `prediction_prix_de_maison.ipynb`.
+
+```bash
+pip install pandas numpy scikit-learn matplotlib seaborn
+```
+
+---
+Aly Keita · [Portfolio](https://alykeita.com) · [LinkedIn](https://www.linkedin.com/in/aly-keita-306703340/)
